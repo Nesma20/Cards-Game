@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cards Game - Team iTi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- header container -->
+    <div class="mainBody header" id="header">
+        <div class="textTitle">Cards Game</div>
+        <div class="headnfoot">
+            <span class="headerSpan"><button class="buttonHeader" id="buttonSettings"><img id="settingsImg" style="width: 16px;" src="images/menu.svg"/></button></span>
+            <span class="headerSpan">Level<button class="buttonHeader" id="level">1</button></span>
+            <span class="headerSpan">Timer<button class="buttonHeader" id="timer">0:0</button></span>
+            <span class="headerSpan">Clicks<button class="buttonHeader" id="click">0</button></span>
+            <span class="headerSpan">Score<button class="buttonHeader" id="score">00 %</button></span>
+            <span class="headerSpan"><button class="buttonReset"  id="reset">Reset</button></span>    
+        </div>
+    </div>
+    
+    <!-- welcome container -->
+    <div class="memory-game mainBody welcome" id="welcome">
+        <div class="settingsMainDiv textBody">
+            <img class='imageTeamDiv' src="images/welcome.svg" style="width: 150px; margin-bottom: 10px; margin: auto"/><br/>
+            <h2 style="text-align: center; margin: 5px">Welcome to Cards Game</h2>
+            <div><button id="btnStart">Start</button></div>
+        </div>
+    </div>
+    
+    <!-- settings container -->
+    <div class="memory-game mainBody settings" id="settings">
+        <div class="settingsMainDiv">
+            <h2 style="text-align: center; margin: 5px">Settings</h2>
+            <div><button id="btnlvl1">Level 1</button></div>
+            <div><button id="btnlvl2">Level 2</button></div>
+            <div><button id="btnlvl3">Level 3</button></div>
+            <!--CLick Sound-->
+            <div>
+            <div class="settingsLeft"><h3>CLick Sound</h3></div>
+            <div class="settingsRight">
+                <label class="switch">
+                <input id="inputCLickSound" type="checkbox" checked>
+                <span class="slider round"></span>
+                </label>
+            </div>
+            </div>
+            
+            <!--Playback Sound -->
+            <div>
+            <div class="settingsLeft"><h3>Playback Sound</h3></div>
+            <div class="settingsRight">
+                <label class="switch">
+                <input id="inputPlaybackSound" type="checkbox" checked>
+                <span class="slider round"></span>
+                </label>
+            </div>
+            </div>
+            <div><button id="buttonBack">Back</button></div>
+            </div>
+    </div>
+    
+    <!-- main game container -->
+    <div class="memory-game mainBody" id="container">
+        
+    </div>
+    
+    <!-- footer container -->
+    <div class="mainBody footer">
+        <div class="headnfoot">
+            <a href="#"><button class="buttonActive">Game</button></a>
+            <a href="how-to-play.html"><button>How to Play</button></a>
+            <a href="team.html"><button>Team</button></a>
+            <div class="headnfoot footerText">Developed by iTians</div>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+
+</html>
